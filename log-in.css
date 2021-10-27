@@ -1,0 +1,180 @@
+html{
+height: 100%;
+}
+
+.left-side{
+padding-top: 152px;
+width: 300px;
+height: 404px;
+padding-right: 170px;
+padding-left: 20px;
+}
+
+.left-side-title{
+    width: 185px;
+    margin-bottom: 45px;
+}
+
+.left-side-title h1{
+font-weight: bold;
+font-size: 55px;
+}
+
+.middle-content{
+    display: flex;
+}
+
+.text-field label{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-field input{
+    width: 320px;
+    height: 42px;
+}
+
+.username-and-password{
+    margin-bottom: 15px;
+}
+
+#username{
+    margin-bottom: 25px;
+}
+
+.forgot-password-trouble-signing-in{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.forgot-password-trouble-signing-in a{
+font-style: italic;
+font-weight: bold;
+font-size: 13px;
+color: #000000;
+text-decoration: none;
+}
+
+.forgot-password-trouble-signing-in a:hover{
+    text-decoration: underline;
+}
+
+.forgot-password{
+    padding-right: 12px;
+    border-right: 2px solid #000000;
+}
+
+.trouble-signing-in{
+    padding-left: 12px;
+}
+
+#submit-button{
+    width: 170px;
+    height: 45px;
+    border: none;
+    margin: 0px;
+}
+
+.right-side{
+    padding-top: 172px;
+    padding-left: 192px;
+}
+
+.right-side-title h1{
+    font-size: 40px;
+    width: 511px;
+}
+
+.right-side-information{
+    margin-bottom: 60px;
+}
+
+.right-side-information h2{
+width: 418px;
+height: 44px;
+font-weight: normal;
+font-size: 20px;
+}
+
+.footer{
+    background: #000000;
+    color: #FFFFFF;
+    width: 1220px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+}
+
+.footer a{
+    color: #FFFFFF;
+}
+
+#location:hover{
+    background: none;
+    text-decoration: underline;
+}
+
+.footer-menu-items-2 span{
+    margin-right: 23px;
+    color: #b9b9b9;
+}
+
+.submit-button{
+width: 190px;
+height: 47px;
+background: #000000;
+box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+border: none;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 17px;
+margin-right: 40px;
+cursor: pointer;
+
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+padding: 10px 16px;
+text-decoration: none;
+}
+
+.submit-button:hover{
+    background: #141414;
+}
+
+@media only screen and (max-width: 1375px){
+    .middle-content{
+        display: block;
+    }
+
+
+    .left-side{
+        padding-top: 152px;
+        width: 300px;
+        height: 404px;
+        padding-right: 0px;
+        padding-left: 20px;
+        }
+
+    .right-side{
+        padding-left: 20px;
+    }
+
+    .right-side-title h1{
+        font-size: 40px;
+        width: 400px;
+    }
+    
+    .right-side-information{
+        margin-bottom: 60px;
+    }
+    
+    .right-side-information h2{
+    width: 400px;
+    height: 44px;
+    font-weight: normal;
+    font-size: 20px;
+    }
+}

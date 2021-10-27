@@ -1,0 +1,56 @@
+.middle-information{
+    padding-top: 220px;
+    padding-left: 290px;
+    margin-bottom: 340px;
+}
+
+.middle-information h1{
+width: 904px;
+height: 217px;
+font-weight: bold;
+font-size: 60px;
+margin-bottom: 60px;
+}
+
+.middle-information a{
+        width: 200px;
+        height: 47px;
+        background: #000000;
+        box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 22px;
+        margin-right: 40px;
+        cursor: pointer;
+        
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        padding: 11px 14px;
+        text-decoration: none;
+        margin-left: 340px;
+}
+
+.middle-information a:hover{
+    background: #1b1b1b;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px){
+    .middle-information{
+        padding-left: 80px;
+    }
+
+    .middle-information h1{
+        font-size: 40px;
+        width: 400px;
+        margin-bottom: 90px;
+        }
+
+        .middle-information a{
+            margin-left: 0px;
+        }
+}

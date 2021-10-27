@@ -1,0 +1,513 @@
+.progress-indicator{
+    width: 230px;
+    height: 230px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-indicator::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid rgba(5, 5, 5, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-indicator span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+
+.progress-indicator .progress-left{
+    left: 0;
+}
+
+.progress-indicator .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress-indicator .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+}
+
+.progress-indicator .progress-right{
+     right: 0;
+ }
+
+.progress-indicator .progress-right .progress-bar{
+     left: -100%;
+     border-top-left-radius: 180px;
+     border-bottom-left-radius: 180px;
+     border-right: 0;
+     transform-origin: center right;
+     -webkit-transform-origin: center right;
+     animation: loading-1 1.9s linear forwards;
+ }
+
+.progress-indicator .progress-value{
+     width: 100%;
+     height: 100%;
+     font-size: 60px;
+     color: rgb(0, 0, 0);
+     text-align: center;
+     position: absolute;   
+     font-family: Montserrat;
+     font-weight: 600;
+     padding-top: 10px;
+ }
+
+.progress-bar{
+      border-color:  #C81515;
+  }
+
+  .progress-indicator .progress-left .progress-bar{
+      animation: loading-2 1.5s linear forwards 1.8s;
+  }
+
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+.nav{
+    height: 75px;
+}
+
+.items{
+    padding-left: 80px;
+    margin-right: 0px;
+    margin-top: 6px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.left-side{
+   padding-left: 0px;
+   padding-right: 0px;
+   margin-right: 100px;
+}
+
+.body-content {
+    padding-left: 50px;
+    display: flex;
+}
+
+.amount-in-bag{
+    visibility: hidden;
+}
+
+.col-md-3{
+    margin-top: 17px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+#user-points{
+font-weight: 600;
+font-size: 20px;
+margin-top: -45px;
+}
+
+#user-point-goal{
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#reward{
+width: 320px;
+font-size: 15px;
+margin-bottom: 50px;
+}
+
+.grey{
+    color: #585858;  
+}
+
+#user-name{
+width: 370px;
+font-weight: 700;
+font-size: 60px;
+}
+
+#user-location{
+font-size: 17px;
+}
+
+#change-location{
+text-decoration: underline;
+color: #5D5D5D;
+font-size: 12px;
+}
+
+#change-location:hover{
+    color: #0f0f0f;
+}
+
+.left-side h1{
+    font-weight: 700;
+}
+
+.left-side h6{
+    font-weight: 600;
+}
+
+.points-history{
+    width: 294px;
+    height: 87px;
+    background: #600D15;
+    color: #FFFFFF;
+    border-radius: 10px; 
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 11px;
+    padding-top: 17px;
+    margin-bottom: 23px;
+}
+
+.points-history p{
+    margin-bottom: 5px;
+}
+.points-history-1{
+    display: flex;
+}
+
+#points-1{
+    width: 152px;
+    margin-right: 55px;
+    font-weight: 200;
+}
+
+.points-history-1 p{
+    font-weight: 600;
+}
+
+.claim-points-button{
+width: 284px;
+height: 42px;
+background: #C81515;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 15px;
+border: none;
+}
+
+.claim-points-button:hover{
+    background: #ac0b0b;
+}
+
+.note-to-user{
+    margin-top: 20px;
+}
+
+.note-to-user span{
+font-weight: 700;
+font-size: 12px;
+color: #0F0F0F;
+}
+
+.note-to-user p{
+    font-weight: 600;
+    font-size: 12px;
+    color: #585858;
+}
+
+.how-to-earn-points a{
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: #0F0F0F;
+}
+
+.how-to-earn-points a:hover{
+    color: #474747;
+}
+
+.middle-section{
+    padding-top: 290px;
+}
+
+.question-form{
+width: 406px;
+height: 220px;
+color: #FFFFFF;
+background: #4E4CD6;
+border-radius: 10px;
+padding-top: 35px;
+margin-bottom: 24px;
+}
+
+.question-form h4{
+font-weight: 700;
+font-size: 32px;
+padding-left: 40px;
+}
+
+.question-form h5{
+    font-weight: 400;
+    font-size: 14px; 
+    padding-left: 90px;
+    padding-top: 5px;
+}
+
+.answer-choices{
+    padding-left: 112px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.answer-choices input{
+width: 13px;
+height: 13px;
+cursor: pointer;
+}
+
+.answer-choice-1{
+    display: flex;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+#answer-choice-label{
+margin-right: 10px;
+font-weight: 500;
+}
+
+.answer-choice-1 input{
+    margin-top: 9px;
+}
+
+.submit-question-of-the-day-form:hover{
+    background: #e6e6e6;
+}
+
+.question-reminder{
+     margin-left: 55px;
+     font-weight: 700;
+}
+
+.user-account-guide-tab{
+    width: 360px;
+    height: 105px;
+    background: #f36767;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-left: 34px;
+    padding-top: 22px;
+    margin-top: 151px;
+    margin-left: 20px;
+}
+
+.user-account-guide-tab p{
+    width: 280px;
+}
+
+.right-side{
+    padding-left: 60px;
+    margin-bottom: 435px;
+}
+
+.settings-form{
+width: 459px;
+height: 540px;
+background: #FEFEFE;
+box-shadow: inset 2px 5px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding-top: 61px;
+padding-left: 45px;
+}
+
+.settings-form h1{
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.settings-1{
+display: block;
+}
+
+.settings-left-side{
+margin-bottom: 55px;
+}
+
+.settings-left-side a{
+    display: block;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.settings-right-side a{
+    display: block;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.settings-1 a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    width: 1410px;
+}
+
+.footer-menu-items-2{
+    width: 1150px;
+}
+
+.button{
+        width: 190px;
+        height: 47px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        border: none;
+        color: #000000;
+        font-weight: 600;
+        font-size: 17px;
+        margin-right: 40px;
+        cursor: pointer;
+        
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        padding: 6px 40px;
+        text-decoration: none;
+        margin-left: 125px;
+        margin-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 1375px){
+.body-content{
+    display: inline-block;
+}
+
+.left-side{
+    margin-bottom: 300px;
+    margin-left: 30px;
+}
+
+.user-account-guide-tab{
+    margin-left: 22px;
+    margin-top: 70px;
+}
+
+.right-side{
+    padding-left: 0px;
+    margin-bottom: 235px;
+}
+
+.settings-form{
+    width: 390px;
+    height: 540px;
+    background: #FEFEFE;
+    box-shadow: inset 2px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-top: 61px;
+    padding-left: 45px;
+}
+
+.footer{
+    width: 100%;
+    padding-left: 60px;
+}
+
+.footer-menu-items-2{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+    .menu-items-1 {
+        margin-left: -120px;
+        width: 330px;
+    }
+
+    .menu-items{
+        margin-left: -70px;
+    }
+
+    .middle-content {
+        padding-left: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+
+    .items{
+        padding-left: 70px;
+        margin-top: 16px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .menu-items-1 {
+        margin-left: 0px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+.amount-in-bag {
+    padding-left: 20px;
+    margin-right: 35px;
+    margin-top: -4px;
+    font-size: 14px;
+    width: auto;
+}
+}
+
+@media only screen and (max-width: 800px){
+    .menu-items-1 {
+        margin-left: 70px;
+        width: 70px;
+        margin-top: 0px;
+    }
+
+    .hamburger-icon .fas{
+        font-size: 27px;
+    }
+    }

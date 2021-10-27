@@ -1,0 +1,23 @@
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(170deg);
+        -webkit-transform: rotate(170deg);
+    }
+}
+
+.points-history{
+    height: 136px;
+}
+
+.points-history-1{
+    display: flex;
+}
+
+.question-reminder{
+    padding-left: 30px;
+}
