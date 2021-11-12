@@ -1,0 +1,1 @@
+function showmessage(){alert("You have already recieved the maximum amount of points earned for today. Come back tomorrow!")};
